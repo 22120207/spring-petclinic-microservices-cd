@@ -52,7 +52,7 @@ pipeline {
 
                     echo "${changedFiles}"
 
-                    def folderList = ['spring-petclinic-customers-service', 'spring-petclinic-vets-service', 'spring-petclinic-visits-service']
+                    def folderList = ['spring-petclinic-customers-service', 'spring-petclinic-vets-service', 'spring-petclinic-visits-service', 'spring-petclinic-api-gateway']
                     
                     def changedFolders = changedFiles.split('\n')
                         .collect { it.split('/')[0] }
